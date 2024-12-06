@@ -1,0 +1,43 @@
+.Mains {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full-screen height */
+    background: linear-gradient(135deg, #f0f9ff, #cfd9df); /* Gradient background */
+    text-align: center;
+    padding: 20px;
+}
+
+.Mains h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Mains p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #50d462;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(80, 212, 98, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45bf57;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(80, 212, 98, 0.6);
+}

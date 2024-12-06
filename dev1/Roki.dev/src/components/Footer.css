@@ -1,0 +1,70 @@
+.footer {
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #50d462;
+    transform: scale(1.2);
+  }
+  
+  .footer::before,
+  .footer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, transparent, rgba(80, 212, 98, 0.4));
+    animation: rotateBackground 20s linear infinite;
+    z-index: -1;
+  }
+  
+  .footer::after {
+    background: radial-gradient(circle, transparent, rgba(255, 255, 255, 0.1));
+    animation-direction: reverse;
+  }
+  
+  @keyframes rotateBackground {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer p {
+      font-size: 0.9rem;
+    }
+  
+    .social-links a {
+      font-size: 1rem;
+    }
+  }
+  

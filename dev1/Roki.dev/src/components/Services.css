@@ -1,0 +1,97 @@
+/* General section styling */
+.services {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Scrollable container */
+  .service-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden; /* Hide scroll bar */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    position: relative;
+    align-items: center;
+  }
+  
+  /* Individual card styling */
+  .card {
+    flex: 0 0 250px; /* Fixed card width */
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #50d462;
+  }
+  
+  .card p {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .card-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #50d462;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    background-color: #45bf57;
+  }
+  
+  /* Scroll buttons */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #50d462;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  .scroll-btn:hover {
+    background: #45bf57;
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+  }
+  
+  .scroll-btn.right {
+    right: 10px;
+  }
+  
