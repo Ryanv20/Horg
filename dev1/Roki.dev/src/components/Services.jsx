@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './Services.css';
+import '../styles/Services.css';
 
 const Services = () => {
   const scrollRef = useRef(null);

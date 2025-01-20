@@ -1,5 +1,5 @@
 import React from 'react';
-import './Mains.css';
+import '../styles/Mains.css';
 
 const Mains = () => (
   <section className="Mains">
